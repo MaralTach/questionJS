@@ -78,8 +78,59 @@ const questions = [
     ]
   },
   {
-      
-  }
+    question:" What is Axios in the context of React.js?",
+    answers: [
+      { text: "A styling library", correct: false },
+      { text: "B. A state management tool", correct: false },
+      { text: "C. A JavaScript library for making HTTP requests", correct: true},
+      {text: "D. A routing library",correct: false},
+    ]
+  },
+  {
+    question:" How do you install Axios in a React project??",
+    answers: [
+      { text: "A. npm install react-axios", correct: false },
+      { text: "B. npm install axios", correct: true },
+      { text: "C. npm install react-http", correct: false},
+      {text: "D. npm install http-axios-react",correct: false},
+    ]
+  },
+  {
+    question:"  How do you handle errors in an Axios request?",
+    answers: [
+      { text: "A. Using the error method", correct: false },
+      { text: "B. Using the fail method", correct: false },
+      { text: "C. Using the handleError method", correct: false},
+      {text: "D. Using the catch method",correct: true},
+    ]
+  },
+  {
+    question:" How can you pass parameters in an Axios POST request in React?",
+    answers: [
+      { text: "A. Using the data property", correct: true },
+      { text: "B. Using the params property", correct: false },
+      { text: "C. Using the body property", correct: false},
+      {text: "D. Using the payload property",correct: false},
+    ]
+  },
+  {
+    question:"In React, what is a common approach to managing Axios requests in functional components?",
+    answers: [
+      { text: "A. Utilizing the useEffect hook", correct: true },
+      { text: "B. Using the componentDidMount lifecycle method", correct: false },
+      { text: "C. Embedding Axios calls directly in the component body", correct: false},
+      {text: "D. Creating a separate class for Axios requests",correct: false},
+    ]
+  },
+  {
+    question:"13. What is the primary advantage of using Axios over the traditional fetch API in React?",
+    answers: [
+      { text: "A. Axios provides a simpler syntax", correct: false },
+      { text: "B. Axios is faster in making HTTP requests", correct: false },
+      { text: "C. Axios has built-in support for interceptors and cancel tokens", correct: true},
+      {text: "D. Axios is the official HTTP library recommended by the React team",correct: false},
+    ]
+  },
 ];
 
 const questionElement = document.getElementById("question");
