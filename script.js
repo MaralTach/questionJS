@@ -1,40 +1,7 @@
 const questions = [
   {
     question:
-      " If you want to import just the Component from the React library, what syntax do you use?",
-    answers: [
-      { text: "A. import React.Component from 'react'", correct: false },
-      { text: "B. import [ Component ] from 'react' 'react'", correct: false },
-      { text: "C. import Component from 'react'", correct: false },
-      { text: "D. import { Component } from 'react'", correct: true },
-    ],
-  },
-  {
-    question:
-      "Given the following code, what does this React element look like? React.createElement('h1', null, 'What's happening?') ",
-
-    answers: [
-      { text: "A. h1 props={null}>What's happening? h1   ", correct: false },
-      { text: "B. h1 What's happening? h1", correct: true },
-      { text: "C. h1 id='component'>What's happening? h1", correct: false },
-      { text: "D. h1 id='element'>What's happening? h1", correct: false },
-    ],
-  },
-  {
-    question: "When do you use useLayoutEffect?",
-    answers: [
-      { text: "A. to optimize for all devices", correct: false },
-      { text: "B. to complete the update", correct: true },
-      { text: "C. to change the layout of the screen", correct: false },
-      {
-        text: "D. when you need the browser to paint before the effect runs",
-        correct: false,
-      },
-    ],
-  },
-  {
-    question:
-      " How do you destructure the properties that are sent to the Dish component?  ",
+      "4). How do you destructure the properties that are sent to the Dish component?  ",
     answers: [
       {
         text: "A. function Dish([name, cookingTime]) { return h1{name} {cookingTime}h1; }",
@@ -54,9 +21,22 @@ const questions = [
       },
     ],
   },
+
+  
+
   {
     question:
-      "Why is it important to avoid copying the values of props into a component's state where possible?",
+      "1).If you want to import just the Component from the React library, what syntax do you use?",
+    answers: [
+      { text: "A. import React.Component from 'react'", correct: false },
+      { text: "B. import [ Component ] from 'react' 'react'", correct: false },
+      { text: "C. import Component from 'react'", correct: false },
+      { text: "D. import { Component } from 'react'", correct: true },
+    ],
+  },
+  {
+    question:
+      "5).Why is it important to avoid copying the values of props into a component's state where possible?",
     answers: [
       { text: "A. because you should never mutate state", correct: false },
       {
@@ -74,7 +54,31 @@ const questions = [
     ],
   },
   {
-    question: "What is the children prop?",
+    question: "7).Which library does the fetch() function come from?",
+    answers: [
+      { text: "A. FetchJS", correct: false },
+      { text: "B. ReactDOM", correct: false },
+      {
+        text: "C. No library. fetch() is supported by most browsers.",
+        correct: true,
+      },
+      { text: "D. React", correct: false },
+    ],
+  },
+  {
+    question: "3).When do you use useLayoutEffect?",
+    answers: [
+      { text: "A. to optimize for all devices", correct: false },
+      { text: "B. to complete the update", correct: true },
+      { text: "C. to change the layout of the screen", correct: false },
+      {
+        text: "D. when you need the browser to paint before the effect runs",
+        correct: false,
+      },
+    ],
+  },
+  {
+    question: "6).What is the children prop?",
     answers: [
       {
         text: "A. a property that adds child components to state",
@@ -94,32 +98,19 @@ const questions = [
       },
     ],
   },
+
   {
-    question: "Which library does the fetch() function come from?",
+    question: "11). How can you pass parameters in an Axios POST request in React?",
     answers: [
-      { text: "A. FetchJS", correct: false },
-      { text: "B. ReactDOM", correct: false },
-      {
-        text: "C. No library. fetch() is supported by most browsers.",
-        correct: true,
-      },
-      { text: "D. React", correct: false },
+      { text: "A. Using the data property", correct: true },
+      { text: "B. Using the params property", correct: false },
+      { text: "C. Using the body property", correct: false },
+      { text: "D. Using the payload property", correct: false },
     ],
   },
+
   {
-    question: " What is Axios in the context of React.js?",
-    answers: [
-      { text: "A styling library", correct: false },
-      { text: "B. A state management tool", correct: false },
-      {
-        text: "C. A JavaScript library for making HTTP requests",
-        correct: true,
-      },
-      { text: "D. A routing library", correct: false },
-    ],
-  },
-  {
-    question: " How do you install Axios in a React project??",
+    question: "9). How do you install Axios in a React project??",
     answers: [
       { text: "A. npm install react-axios", correct: false },
       { text: "B. npm install axios", correct: true },
@@ -128,7 +119,23 @@ const questions = [
     ],
   },
   {
-    question: "  How do you handle errors in an Axios request?",
+    question:
+      "13).What is the primary advantage of using Axios over the traditional fetch API in React?",
+    answers: [
+      { text: "A. Axios provides a simpler syntax", correct: false },
+      { text: "B. Axios is faster in making HTTP requests", correct: false },
+      {
+        text: "C. Axios has built-in support for interceptors and cancel tokens",
+        correct: true,
+      },
+      {
+        text: "D. Axios is the official HTTP library recommended by the React team",
+        correct: false,
+      },
+    ],
+  },
+  {
+    question: "10). How do you handle errors in an Axios request?",
     answers: [
       { text: "A. Using the error method", correct: false },
       { text: "B. Using the fail method", correct: false },
@@ -136,18 +143,10 @@ const questions = [
       { text: "D. Using the catch method", correct: true },
     ],
   },
-  {
-    question: " How can you pass parameters in an Axios POST request in React?",
-    answers: [
-      { text: "A. Using the data property", correct: true },
-      { text: "B. Using the params property", correct: false },
-      { text: "C. Using the body property", correct: false },
-      { text: "D. Using the payload property", correct: false },
-    ],
-  },
+
   {
     question:
-      "In React, what is a common approach to managing Axios requests in functional components?",
+      "12).In React, what is a common approach to managing Axios requests in functional components?",
     answers: [
       { text: "A. Utilizing the useEffect hook", correct: true },
       {
@@ -165,19 +164,27 @@ const questions = [
     ],
   },
   {
-    question:
-      "What is the primary advantage of using Axios over the traditional fetch API in React?",
+    question: "8). What is Axios in the context of React.js?",
     answers: [
-      { text: "A. Axios provides a simpler syntax", correct: false },
-      { text: "B. Axios is faster in making HTTP requests", correct: false },
+      { text: "A styling library", correct: false },
+      { text: "B. A state management tool", correct: false },
       {
-        text: "C. Axios has built-in support for interceptors and cancel tokens",
+        text: "C. A JavaScript library for making HTTP requests",
         correct: true,
       },
-      {
-        text: "D. Axios is the official HTTP library recommended by the React team",
-        correct: false,
-      },
+      { text: "D. A routing library", correct: false },
+    ],
+  },
+  
+  {
+    question:
+      "2. Given the following code, what does this React element look like? React.createElement('h1', null, 'What's happening?') ",
+
+    answers: [
+      { text: "A. h1 props={null}>What's happening? h1   ", correct: false },
+      { text: "B. h1 What's happening? h1", correct: true },
+      { text: "C. h1 id='component'>What's happening? h1", correct: false },
+      { text: "D. h1 id='element'>What's happening? h1", correct: false },
     ],
   },
 ];
