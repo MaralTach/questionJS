@@ -1,5 +1,6 @@
 const questions = [
   {
+    img:"./img/4soru.png",
     question:
       "4). How do you destructure the properties that are sent to the Dish component?  ",
     answers: [
@@ -177,6 +178,7 @@ const questions = [
   },
   
   {
+    img:"./img/2soru.png",
     question:
       "2. Given the following code, what does this React element look like? React.createElement('h1', null, 'What's happening?') ",
 
@@ -207,6 +209,11 @@ function showQuestion() {
   let currentQuestion = questions[currentQuestionIndex];
   let questionNo = currentQuestionIndex + 1;
   let questionContent = questionNo + ". " + currentQuestion.question + "<br>";
+
+  if (currentQuestion.img) {
+    // Eğer soru için bir resim varsa, resmi göster
+    questionContent += `<img src="${currentQuestion.img}" alt="" /><br>`;
+  }
 
   currentQuestion.answers.forEach((answer) => {
     const button = document.createElement("button");
