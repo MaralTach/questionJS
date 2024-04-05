@@ -29,6 +29,9 @@ body {
   color: #001e4d;
   font-weight: 600;
 }
+.quiz img{
+  width: 100%;
+}
 .btn {
   background: #fff;
   color: #222;
